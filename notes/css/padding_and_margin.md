@@ -5,7 +5,7 @@
 ### Example
 
 ```h
-	<style>
+<style>
   .injected-text {
     margin-bottom: -25px;
     text-align: center;
@@ -41,7 +41,8 @@
 
 Place on the website like this:
 ```h
-	<h5 class="injected-text">margin</h5>
+<h5 class="injected-text">margin</h5>
+
 <div class="box yellow-box">
   <h5 class="box red-box">padding</h5>
   <h5 class="box blue-box">padding</h5>
