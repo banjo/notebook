@@ -1,6 +1,7 @@
 # Programming
 
-### [Python](https://github.com/banjoanton/notebook/blob/master/python.md)
+### Python
+* [Automation](https://github.com/banjoanton/notebook/blob/master/notes/nython/python_automation.md)
 
 ### [Java](https://github.com/banjoanton/notebook/blob/master/java.md)
 
