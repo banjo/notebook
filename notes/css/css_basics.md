@@ -1,6 +1,21 @@
 # CSS
 
 ## Basics
+- [Inline editing: change color](#inline-editing--change-color)
+- [Style block](#style-block)
+- [Stylize classes](#stylize-classes)
+- [Stylize headers](#stylize-headers)
+- [Import font from Google](#import-font-from-google)
+- [Multiple classes](#multiple-classes)
+- [Stylize ID](#stylize-id)
+- [Stylize type](#stylize-type)
+- [Colors](#colors)
+  * [RGB](#rgb)
+  * [Hex](#hex)
+  * [By color](#by-color)
+- [CSS variables](#css-variables)
+  * [Root](#root)
+  * [Fallback value](#fallback-value)
 
 ### Inline editing: change color
 
