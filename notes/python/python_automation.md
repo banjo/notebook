@@ -16,9 +16,9 @@
 - [Other](#other)
   * [Print in color](#print-in-color)
 
-### PyAutoGui
+## PyAutoGui
 
-#### Match pixel
+### Match pixel
 See if pixel matchens a specific color.
 
 ```python
@@ -27,7 +27,7 @@ if pyautogui.pixelMatchesColor(25, 162, (255, 255, 255)):
             exit()
 ```
 
-#### Look for picture
+### Look for picture
 See if a picture exists on a screen.
 
 ```python
@@ -41,9 +41,9 @@ def letaBild (bild, region):
         return False
 ```
 
-### Keyboard
+## Keyboard
 
-#### Use hotkey
+### Use hotkey
 ```python
 import keyboard, time
 
@@ -59,9 +59,9 @@ keyboard.press_and_release("backspace")# backspace
 time.sleep(1)
 ```
 
-### Excel
+## Excel
 
-#### Read excel file.
+### Read excel file.
 
 ```python
 import pandas as pd
@@ -75,7 +75,7 @@ df = pd.read_excel('name_of_excel.xlsx', sheet_name='name_of_sheet')
 total = df['total']
 ```
 
-#### Write to excel.
+### Write to excel.
 ```python
 import pandas as pd
 from pandas import ExcelWriter
@@ -98,9 +98,9 @@ df2.to_excel(writer, "Sheet1", index=False)
 writer.save()
 ```
 
-### Selenium
+## Selenium
 
-#### Change tab
+### Change tab
 ```python
 browser = driver
 ```
@@ -113,7 +113,7 @@ Change to main window.
 browser.switch_to.window(browser.window_handles[0])
 ```
 
-#### Find element by xpath
+### Find element by xpath
 ```p
 from selenium.common.exceptions import NoSuchElementException
 
@@ -126,7 +126,7 @@ def findxPath(xpath):
         print("Did not find element")
 ```
 
-#### Look for loaded page
+### Look for loaded page
 Looks for a loaded page - as well as if it is a correct page. Looks for it based on the xpath. 
 Returns true if it finds it.
 
@@ -145,9 +145,9 @@ def loadPage(xpath, browser):
         return False
 ```
 
-### Other
+## Other
 
-#### Print in color
+### Print in color
 
 ```p
 from termcolor import colored
