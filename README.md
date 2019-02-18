@@ -1,12 +1,13 @@
 # Programming
 
 ### Python
-* [Automation](https://github.com/banjoanton/notebook/blob/master/notes/nython/python_automation.md)
+* [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
 
-### [Java](https://github.com/banjoanton/notebook/blob/master/java.md)
+### Java
 
-### [HTML](https://github.com/banjoanton/notebook/blob/master/html.md)
+### HTML
+* [Basics](https://github.com/banjoanton/notebook/blob/master/notes/html/html_basics.md)
 
-### [CSS](https://github.com/banjoanton/notebook/blob/master/CSS.md)
+### CSS
 
 ### [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
