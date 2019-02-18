@@ -142,7 +142,7 @@ public enum Suit {
 A class called "Card" the implements the enumerator.
 
 ```j
-	public class Card {
+public class Card {
     private int value;
     private Suit suit;
     public Card(int value, Suit suit) {
@@ -165,7 +165,7 @@ A class called "Card" the implements the enumerator.
 How the class and enumerator is used in Main.
 
 ```j
-	public class Main {
+public class Main {
     public static void main(String[] args) {
         Card first = new Card(10, Suit.HEARTS);
         System.out.println(first);
@@ -182,7 +182,7 @@ How the class and enumerator is used in Main.
 #### Enumerator with names
 
 ```j
-	public enum Colour {
+public enum Colour {
     RED("red"), // the constructor parameters are defined as constant values when they are read
     GREEN("green"),
     BLUE("blue");
@@ -225,7 +225,7 @@ Basics on how to use an interface.
 #### Ebook Example
 
 ```j
-	public class EBook implements Readable {
+public class EBook implements Readable {
     private String name;
     private ArrayList<String> pages;
     private int pageNumber;
@@ -259,10 +259,10 @@ Basics on how to use an interface.
 #### Interface example
 Simple example how to implement an interface called Readable.
 ```j
-	public interface Readable {
+public interface Readable {
   // everything the implements Readable must have a function called read which returns a string.  
   String read();
-  }
+}
 ```
 
 How to use the Readable interface.
@@ -329,7 +329,7 @@ public class Main {
 How border layout works in Swing.
 
 ```j
-	private void createComponents(Container container) {
+private void createComponents(Container container) {
     // the following line is not essential in this case, because BorderLayout is default in JFrame
     container.setLayout(new BorderLayout());
     container.add(new JButton("North"), BorderLayout.NORTH);
@@ -348,7 +348,7 @@ See how it looks [here](https://drive.google.com/open?id=1f13iNuCeeHmwLUL9qlpAN_
 How a box layout works.
 
 ```j
-	private void createComponents(Container container) {
+private void createComponents(Container container) {
       
       // X = horizontal, Y = verical.
     BoxLayout layout = new BoxLayout(container, BoxLayout.X_AXIS);
@@ -397,7 +397,7 @@ Picture [here](https://drive.google.com/open?id=1aj7AZLfWDhFsrwLzptU2VjJUie__sHq
 How to create a button group in Swing.
 
 ```j
-	    private void createComponents(Container container) {
+    private void createComponents(Container container) {
         BoxLayout layout = new BoxLayout(container, BoxLayout.Y_AXIS);
         container.setLayout(layout);
         container.add(new JLabel("Choose meat or fish:"));
@@ -428,7 +428,7 @@ public class MessageListener implements ActionListener {
 Activate it in "createComponents"
 
 ```j
-	    private void createComponents(Container container) {
+    private void createComponents(Container container) {
         JButton button = new JButton("Send!");
         button.addActionListener(new MessageListener());
         container.add(button);
@@ -438,7 +438,7 @@ Activate it in "createComponents"
 #### Action Listener With Action
 
 ```j
-	import java.awt.event.ActionEvent;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JTextArea;
 public class AreaCopier implements ActionListener {
@@ -458,7 +458,7 @@ public class AreaCopier implements ActionListener {
 How it looks in "createComponents"
 
 ```j
-	    private void createComponents(Container container) {
+    private void createComponents(Container container) {
         GridLayout layout = new GridLayout(1, 3);
         container.setLayout(layout);
         JTextArea textAreaLeft = new JTextArea("The Copier");
@@ -476,7 +476,7 @@ How it looks in "createComponents"
 Basic way to use action listener with multiple buttons.
 
 ```j
-	public class ActionListenerExample implements ActionListener {
+    public class ActionListenerExample implements ActionListener {
     
     @Override
       public void actionPerformed(ActionEvent e) {
@@ -518,7 +518,7 @@ Picture can be seen [here](https://drive.google.com/open?id=1yjA0ofoYlmvkGN2LvyK
 The class looks like this.
 
 ```j
-	import java.awt.GridLayout;
+import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 public class MenuPanel extends JPanel {
@@ -599,7 +599,7 @@ public class DrawingBoard extends JPanel {
 Example:
 
 ```j
-	    @Override
+    @Override
     protected void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
         graphics.setColor(Color.GREEN);
@@ -614,7 +614,7 @@ Picture [here](https://drive.google.com/open?id=1n7qSP0YUSrI3TmWraaIS30XrA2RqayH
 createComponents:
 
 ```j
-	   private void createComponents(Container container) {
+    private void createComponents(Container container) {
         container.add(new DrawingBoard());
     }
 ```
