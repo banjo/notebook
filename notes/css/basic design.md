@@ -1,6 +1,19 @@
-# Basic Design
+# CSS
 
-## CSS
+## Basic Design
+- [Headings](#headings)
+- [Article Element](#article-element)
+  * [Article Example](#article-example)
+- [Header Element](#header-element)
+- [Nav Element](#nav-element)
+- [Footer Element](#footer-element)
+- [Audio Element](#audio-element)
+- [Figure Element](#figure-element)
+- [Form Element](#form-element)
+- [Fieldset Element](#fieldset-element)
+- [Access Key](#access-key)
+- [Tabindex](#tabindex)
+
 
 ## Headings
 Headings (h1 through h6 elements) are workhorse tags that help provide structure and labeling to your content. Screen readers can be set to read only the headings on a page so the user gets a summary. This means it is important for the heading tags in your markup to have semantic meaning and relate to each other, not be picked merely for their size values.
@@ -142,4 +155,33 @@ The fieldset wrapper and legend tag are not necessary when the choices are self-
 </form>
 ```
 
+## Access Key
+HTML offers the accesskey attribute to specify a shortcut key to activate or bring focus to an element. This can make navigation more efficient for keyboard-only users.
 
+HTML5 allows this attribute to be used on any element, but it's particularly useful when it's used with interactive ones. This includes links, buttons, and form controls.
+
+**Example**
+```h
+<button accesskey="b">Important Button</button>
+```
+
+## Tabindex
+Makes it possible to tab through elements on a webpage. 
+
+The HTML tabindex attribute has three distinct functions relating to an element's keyboard focus. When it's on a tag, it indicates that element can be focused on. The value (an integer that's positive, negative, or zero) determines the behavior.
+
+Certain elements, such as links and form controls, automatically receive keyboard focus when a user tabs through a page. It's in the same order as the elements come in the HTML source markup. This same functionality can be given to other elements, such as div, span, and p, by placing a tabindex="0" attribute on them. 
+
+A negative tabindex value (typically -1) indicates that an element is focusable, but is not reachable by the keyboard. This method is generally used to bring focus to content programmatically (like when a div used for a pop-up window is activated), and is beyond the scope of these challenges.
+
+**Example**
+```h
+<div tabindex="0">I need keyboard focus!</div>
+```
+
+**Choose order**
+```h
+<div tabindex="1">I get keyboard focus, and I get it first!</div>
+
+<div tabindex="2">I get keyboard focus, and I get it second!</div>
+```
