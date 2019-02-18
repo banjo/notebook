@@ -4,6 +4,7 @@
 * [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
 
 ### Java
+* [MOOC](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md) 
 
 ### HTML
 * [Basics](https://github.com/banjoanton/notebook/blob/master/notes/html/html_basics.md)
