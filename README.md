@@ -11,5 +11,6 @@
 ### CSS
 * [Basics](https://github.com/banjoanton/notebook/blob/master/notes/css/css_basics.md)
 * [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/css/override_scheme.md)
+* [Padding and margin](https://github.com/banjoanton/notebook/blob/master/notes/css/padding_and_margin.md)
 
-### [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
+### [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
