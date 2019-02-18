@@ -4,17 +4,17 @@
 
 Which element goes first?
 
-1. !important
+### 1. !important
 ```h
 color: green !important;
 ```
 
-2. inline style
+### 2. inline style
 ```h
 <h1 style="color: green;">
 ```
 
-3. ID
+### 3. ID
 ```h
 #header2 {
   color: blue;
@@ -25,7 +25,7 @@ color: green !important;
 <h1 id="header2"></h1>
 ```
 
-4. Class
+### 4. Class
 ```h
 .orange-text{
   color: orange;
@@ -37,7 +37,7 @@ color: green !important;
 ```
 
 
-5. Class above a class
+### 5. Class above a class
 The document is read in order. Any change of class above another is not applied. The lowest one is the active one.
 
-6. in Body
+### 6. in Body
