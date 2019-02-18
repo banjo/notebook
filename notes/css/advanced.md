@@ -3,10 +3,10 @@
 ## Advanced 
 Based on the course from FreeCodeCamp called Applied Visual Design.
 
-### Psuedo classes
+## Psuedo classes
 Use psudo classes to access specific parts of an element.
 
-#### Hover class
+### Hover class
 This class gets activated when the mouse hovers over said element.
 The object is black from the beginning, and turns blue when hovered over.
 
@@ -22,13 +22,13 @@ The object is black from the beginning, and turns blue when hovered over.
 </style>
 ```
 
-### Positioning
+## Positioning
 
 There are several different ways to position elements in CSS.
 
 ![](https://image.slidesharecdn.com/positionanditsvalues-170702045148/95/css-position-and-its-values-1-638.jpg?cb=1498971289)
 
-#### Relative position
+### Relative position
 This example is 15 px from the top
 
 ```h
@@ -40,7 +40,7 @@ This example is 15 px from the top
 </style>
 ```
 
-#### Absolute position
+### Absolute position
 Position to other elements
 ```h
 <style>
@@ -52,7 +52,7 @@ Position to other elements
 </style>
 ```
 
-#### Fixed position
+### Fixed position
 Fixed. Won't move when scroll.
 ```h
 <style>
@@ -71,10 +71,10 @@ transform: scale(1.5);
 transform: function(variable);
 ```
 
-### Animation
+## Animation
 Animations are used to make objects move. Its based on **@Keyframes**. 
 
-#### Basic animation
+### Basic animation
 The animation is in this case connected to an ID. The name is **colorful** and the duration is 3 seconds.
 Once the ID is done - the keyframe connected to the name **colorful** is created.
 
@@ -96,7 +96,7 @@ The keyframe uses 0-100% to choose order. 0 first and 100 last.
 }
 ```
 
-#### Animate hover
+### Animate hover
 It's possible to animate only objects that are hovered upon using psuedo classes.
 In this case: all pictures that are hovered upon changes size. There is however one problem: the animation keeps on moving again and again. 
 
