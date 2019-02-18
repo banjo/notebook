@@ -1,6 +1,20 @@
 # Python
 
 ## Automation
+- [PyAutoGui](#pyautogui)
+  * [Match pixel](#match-pixel)
+  * [Look for picture](#look-for-picture)
+- [Keyboard](#keyboard)
+  * [Use hotkey](#use-hotkey)
+- [Excel](#excel)
+  * [Read excel file.](#read-excel-file)
+  * [Write to excel.](#write-to-excel)
+- [Selenium](#selenium)
+  * [Change tab](#change-tab)
+  * [Find element by xpath](#find-element-by-xpath)
+  * [Look for loaded page](#look-for-loaded-page)
+- [Other](#other)
+  * [Print in color](#print-in-color)
 
 ### PyAutoGui
 
