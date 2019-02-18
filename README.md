@@ -10,6 +10,7 @@
 
 ### CSS
 * [Basics](https://github.com/banjoanton/notebook/blob/master/notes/css/css_basics.md)
+* [Advanced](https://github.com/banjoanton/notebook/blob/master/notes/css/advanced.md)
 * [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/css/override_scheme.md)
 * [Padding and margin](https://github.com/banjoanton/notebook/blob/master/notes/css/padding_and_margin.md)
 
