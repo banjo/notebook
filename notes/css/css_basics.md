@@ -17,13 +17,13 @@
   * [Root](#root)
   * [Fallback value](#fallback-value)
 
-### Inline editing: change color
+## Inline editing: change color
 
 ```h
 <h2 style="color: blue;">Other color on heading</h2>
 ```
 
-### Style block
+## Style block
 Best way to use CSS is with a style block.
 
 ```h
@@ -32,7 +32,7 @@ Best way to use CSS is with a style block.
 </style>
 ```
 
-### Stylize classes
+## Stylize classes
 Create a class to use on different elements.
 ```h
 <style>
@@ -47,7 +47,7 @@ Use it on an element.
 <h2 class="red-text">CatPhotoApp</h2>
 ```
 
-### Stylize headers
+## Stylize headers
 Change to font and size of all H2. Use Helvetica if possible, else use sans-serif.
 ```h
 h2 {
@@ -56,13 +56,13 @@ h2 {
 }
 ```
 
-### Import font from Google
+## Import font from Google
 Import font from google to use on webpage. Do before style segment.
 ```h
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 ```
 
-### Multiple classes
+## Multiple classes
 Create multiple classes for a single element. Separate with space.
 ```h
 <style>
@@ -83,7 +83,7 @@ Apply it to an element. This case a picture.
 <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 ```
 
-### Stylize ID
+## Stylize ID
 Create a certain style. An ID should only be applied to ONE element.
 ```h
 <style>
@@ -97,7 +97,7 @@ Apply it to the element with the id-tag.
 <a href="#"><img id="cat-photo-element" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 ```
 
-### Stylize type
+## Stylize type
 Create a style for a certain type of an ojbect. This case for a checkboc of type radio.
 ```h
 <style>
@@ -108,23 +108,23 @@ Create a style for a certain type of an ojbect. This case for a checkboc of type
 </style>
 ```
 
-### Colors
+## Colors
 You can choose colors with hex, RGB, normal colors or variables.
-#### RGB
+### RGB
 ```h
 background-color: rgb(255, 165, 0);
 ```
-#### Hex
+### Hex
 ```h
 background-color: #00FF00;
 ```
 
-#### By color
+### By color
 ```h
 background-color: black;
 ```
 
-### CSS variables
+## CSS variables
 It is possible to use variables in CSS. A variable called variable skin.
 ```h
 --penguin-skin: blue;
@@ -137,7 +137,7 @@ Use it like this;
 }
 ```
 
-#### Root
+### Root
 Declare the variables in the root to use them in the whole document. The root should be at the top.
 ```h
 <style>
@@ -147,7 +147,7 @@ Declare the variables in the root to use them in the whole document. The root sh
 </style>
 ```
 
-#### Fallback value
+### Fallback value
 It is still possible to use a fallback value in variables. 
 ```h
 background: var(--penguin-skin, black);
