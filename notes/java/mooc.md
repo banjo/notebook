@@ -326,7 +326,7 @@ public class Main {
 }
 ```
 #### Border Layout
-How border layout works in Swing
+How border layout works in Swing.
 
 ```j
 	private void createComponents(Container container) {
