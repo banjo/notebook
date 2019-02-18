@@ -3,6 +3,35 @@
 ## MOOC
 Notes from Helsinki MOOC.
 
+- [Iterator](#iterator)
+  * [Iterator to print](#iterator-to-print)
+  * [Print with more than one "HasNext"](#print-with-more-than-one--hasnext-)
+  * [Remove with iterator](#remove-with-iterator)
+- [Comparator](#comparator)
+  * [Sort](#sort)
+- [Enumerator](#enumerator)
+  * [Enumerator basics](#enumerator-basics)
+  * [Enumerator with names](#enumerator-with-names)
+- [Interface](#interface)
+  * [Create readable](#create-readable)
+  * [Ebook Example](#ebook-example)
+  * [Interface example](#interface-example)
+- [Swing](#swing)
+  * [Basic UserInterface](#basic-userinterface)
+  * [Border Layout](#border-layout)
+  * [Box Layout](#box-layout)
+  * [Grid Layout](#grid-layout)
+  * [Button Group](#button-group)
+  * [Basic Action Listener](#basic-action-listener)
+  * [Action Listener With Action](#action-listener-with-action)
+  * [Action Listener with Multiple Buttons](#action-listener-with-multiple-buttons)
+  * [Basic jPanel](#basic-jpanel)
+  * [jPanel as Class](#jpanel-as-class)
+  * [jPanel Best Practice](#jpanel-best-practice)
+  * [jPanel with Graphics](#jpanel-with-graphics)
+- [Regular Expressions](#regular-expressions)
+- [Other](#other)
+
 ### Iterator
 How to use an iterator. Below is an example that will use an iterator.
 
@@ -40,7 +69,7 @@ public class Hand {
 #### Print with more than one "HasNext"
 
 ```p
-	    public void print(Education education) {
+     public void print(Education education) {
         Iterator<Person> iterator = employees.iterator();
         while (iterator.hasNext()) {
         
