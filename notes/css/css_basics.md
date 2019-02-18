@@ -117,9 +117,9 @@ It is possible to use variables in CSS. A variable called variable skin.
 
 Use it like this;
 ```h
-	.penguin-top {
-    background: var(--penguin-skin);
-  }
+.penguin-top {
+  background: var(--penguin-skin);
+}
 ```
 
 #### Root
