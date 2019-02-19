@@ -1,38 +1,44 @@
 # Frontend
 
 ## CSS Basics
-- [Inline editing: change color](#inline-editing--change-color)
-- [Style block](#style-block)
-- [Stylize classes](#stylize-classes)
-- [Stylize headers](#stylize-headers)
-- [Import font from Google](#import-font-from-google)
-- [Multiple classes](#multiple-classes)
-- [Stylize ID](#stylize-id)
-- [Stylize type](#stylize-type)
-- [Colors](#colors)
-  * [RGB](#rgb)
-  * [Hex](#hex)
-  * [By color](#by-color)
-- [CSS variables](#css-variables)
-  * [Root](#root)
-  * [Fallback value](#fallback-value)
-- [Psuedo classes](#psuedo-classes)
-  * [Hover class](#hover-class)
-  * [Psuedo to connect elements](#psuedo-to-connect-elements)
-- [Positioning](#positioning)
-  * [Relative position](#relative-position)
-  * [Absolute position](#absolute-position)
-  * [Fixed position](#fixed-position)
-  * [Transform](#transform)
-- [Animation](#animation)
-  * [Basic animation](#basic-animation)
-  * [Animate hover](#animate-hover)
-    + [Without Fill Mode](#without-fill-mode)
-    + [With Fill Mode](#with-fill-mode)
-  * [Movement with CSS](#movement-with-css)
-  * [Loop Animations](#loop-animations)
-  * [Animation Timing](#animation-timing)
-  * [Cubic Bezier](#cubic-bezier)
+- [Frontend](#frontend)
+  * [CSS Basics](#css-basics)
+  * [Inline editing: change color](#inline-editing--change-color)
+  * [Style block](#style-block)
+  * [Stylize classes](#stylize-classes)
+  * [Stylize headers](#stylize-headers)
+  * [Import font from Google](#import-font-from-google)
+  * [Multiple classes](#multiple-classes)
+  * [Stylize ID](#stylize-id)
+  * [Stylize type](#stylize-type)
+  * [Colors](#colors)
+    + [RGB](#rgb)
+    + [Hex](#hex)
+    + [By color](#by-color)
+  * [CSS variables](#css-variables)
+    + [Root](#root)
+    + [Fallback value](#fallback-value)
+  * [CSS Padding and margin](#css-padding-and-margin)
+    + [Example](#example)
+    + [Information](#information)
+  * [Psuedo classes](#psuedo-classes)
+    + [Hover class](#hover-class)
+    + [Psuedo to connect elements](#psuedo-to-connect-elements)
+  * [Positioning](#positioning)
+    + [Relative position](#relative-position)
+    + [Absolute position](#absolute-position)
+    + [Fixed position](#fixed-position)
+    + [Transform](#transform)
+  * [Animation](#animation)
+    + [Basic animation](#basic-animation)
+    + [Animate hover](#animate-hover)
+      - [Without Fill Mode](#without-fill-mode)
+      - [With Fill Mode](#with-fill-mode)
+    + [Movement with CSS](#movement-with-css)
+    + [Loop Animations](#loop-animations)
+    + [Animation Timing](#animation-timing)
+    + [Cubic Bezier](#cubic-bezier)
+
 
 ## Inline editing: change color
 
@@ -169,6 +175,62 @@ It is still possible to use a fallback value in variables.
 ```h
 background: var(--penguin-skin, black);
 ```
+
+## CSS Padding and margin
+
+### Example
+
+```h
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+  
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px 40px 20px 40px;
+    margin: 20px;
+  }
+</style>
+```
+
+Place on the website like this:
+```h
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+```
+
+
+### Information
+Padding is within, margin is outside. 
+
+![](https://i.stack.imgur.com/UHD7W.gif)
+
 
 ## Psuedo classes
 Use psudo classes to access specific parts of an element.
