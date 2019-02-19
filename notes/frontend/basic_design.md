@@ -1,6 +1,6 @@
-# CSS
+# Frontend
 
-## Basic Design
+## Basic CSS Design
 - [Headings](#headings)
 - [Article Element](#article-element)
   * [Article Example](#article-example)
