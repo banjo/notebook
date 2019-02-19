@@ -13,5 +13,6 @@
   * [CSS Basics](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_basics.md)
   * [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/frontend/override_scheme.md)
   * [CSS Flexbox](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_flexbox.md)
+  * [CSS Grid](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_grid.md)
 
 ### [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
