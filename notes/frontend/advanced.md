@@ -1,6 +1,6 @@
-# CSS
+# Frontend
 
-## Advanced 
+## Advanced CSS
 Based on the course from FreeCodeCamp called Applied Visual Design.
 
 ## Psuedo classes
