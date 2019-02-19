@@ -7,9 +7,9 @@
 * [MOOC](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md) 
 
 ### Frontend
-- HTML
+- HTML (FCC)
   * [HTML Basics](https://github.com/banjoanton/notebook/blob/master/notes/frontend/html_basics.md)
-- CSS
+- CSS (FCC)
   * [CSS Basics](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_basics.md)
   * [Advanced](https://github.com/banjoanton/notebook/blob/master/notes/frontend/advanced.md)
   * [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/frontend/override_scheme.md)
