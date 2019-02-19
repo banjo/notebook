@@ -3,6 +3,15 @@
 ## CSS Flexbox
 Based on the course on FreeCodeCamp.
 
+- [display: flex](#display--flex)
+- [flex-direction](#flex-direction)
+- [justify-content](#justify-content)
+- [align-items](#align-items)
+- [flex-wrap](#flex-wrap)
+- [flex-shrink, flex-grow and flex-basis](#flex-shrink--flex-grow-and-flex-basis)
+- [order](#order)
+- [align-self](#align-self)
+
 ## display: flex
 Placing the CSS property display: flex; on an element allows you to use other flex properties to build a responsive page.
 
