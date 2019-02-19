@@ -1,6 +1,6 @@
-# CSS
+# Frontend
 
-## Basics
+## CSS Basics
 - [Inline editing: change color](#inline-editing--change-color)
 - [Style block](#style-block)
 - [Stylize classes](#stylize-classes)
