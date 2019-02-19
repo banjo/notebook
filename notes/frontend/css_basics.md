@@ -1,43 +1,46 @@
 # Frontend
 
 ## CSS Basics
-- [Frontend](#frontend)
-  * [CSS Basics](#css-basics)
-  * [Inline editing: change color](#inline-editing--change-color)
-  * [Style block](#style-block)
-  * [Stylize classes](#stylize-classes)
-  * [Stylize headers](#stylize-headers)
-  * [Import font from Google](#import-font-from-google)
-  * [Multiple classes](#multiple-classes)
-  * [Stylize ID](#stylize-id)
-  * [Stylize type](#stylize-type)
-  * [Colors](#colors)
-    + [RGB](#rgb)
-    + [Hex](#hex)
-    + [By color](#by-color)
-  * [CSS variables](#css-variables)
-    + [Root](#root)
-    + [Fallback value](#fallback-value)
-  * [CSS Padding and margin](#css-padding-and-margin)
-    + [Example](#example)
-    + [Information](#information)
-  * [Psuedo classes](#psuedo-classes)
-    + [Hover class](#hover-class)
-    + [Psuedo to connect elements](#psuedo-to-connect-elements)
-  * [Positioning](#positioning)
-    + [Relative position](#relative-position)
-    + [Absolute position](#absolute-position)
-    + [Fixed position](#fixed-position)
-    + [Transform](#transform)
-  * [Animation](#animation)
-    + [Basic animation](#basic-animation)
-    + [Animate hover](#animate-hover)
-      - [Without Fill Mode](#without-fill-mode)
-      - [With Fill Mode](#with-fill-mode)
-    + [Movement with CSS](#movement-with-css)
-    + [Loop Animations](#loop-animations)
-    + [Animation Timing](#animation-timing)
-    + [Cubic Bezier](#cubic-bezier)
+- [Inline editing: change color](#inline-editing--change-color)
+- [Style block](#style-block)
+- [Stylize classes](#stylize-classes)
+- [Stylize headers](#stylize-headers)
+- [Import font from Google](#import-font-from-google)
+- [Multiple classes](#multiple-classes)
+- [Stylize ID](#stylize-id)
+- [Stylize type](#stylize-type)
+- [Colors](#colors)
+  * [RGB](#rgb)
+  * [Hex](#hex)
+  * [By color](#by-color)
+- [CSS variables](#css-variables)
+  * [Root](#root)
+  * [Fallback value](#fallback-value)
+- [CSS Padding and margin](#css-padding-and-margin)
+  * [Example](#example)
+  * [Information](#information)
+- [Psuedo classes](#psuedo-classes)
+  * [Hover class](#hover-class)
+  * [Psuedo to connect elements](#psuedo-to-connect-elements)
+- [Positioning](#positioning)
+  * [Relative position](#relative-position)
+  * [Absolute position](#absolute-position)
+  * [Fixed position](#fixed-position)
+  * [Transform](#transform)
+- [Animation](#animation)
+  * [Basic animation](#basic-animation)
+  * [Animate hover](#animate-hover)
+    + [Without Fill Mode](#without-fill-mode)
+    + [With Fill Mode](#with-fill-mode)
+  * [Movement with CSS](#movement-with-css)
+  * [Loop Animations](#loop-animations)
+  * [Animation Timing](#animation-timing)
+  * [Cubic Bezier](#cubic-bezier)
+- [Responsive Web Design](#responsive-web-design)
+- [Media Querys](#media-querys)
+- [Responsive Images](#responsive-images)
+- [Retina Pictures](#retina-pictures)
+- [Responsive Typography](#responsive-typography)
 
 
 ## Inline editing: change color
@@ -490,6 +493,65 @@ The cubic-bezier function consists of four main points that sit on this 1 by 1 g
 
 In the example above, the x and y values are equivalent for each point (x1 = 0.25 = y1 and x2 = 0.75 = y2), which if you remember from geometry class, results in a line that extends from the origin to point (1, 1). This animation is a linear change of an element during the length of an animation, and is the same as using the linear keyword. In other words, it changes at a constant speed.
 
+## Responsive Web Design
+Based on FreeCodeCamp.
+
+## Media Querys
+Media Queries are a new technique introduced in CSS3 that change the presentation of content based on different viewport sizes. The viewport is a user's visible area of a web page, and is different depending on the device used to access the site.
+
+Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, the styles are applied. You can have as many selectors and styles inside your media query as you want.
+
+Here's an example of a media query that returns the content when the device's width is less than or equal to 100px:
+
+```h
+@media (max-width: 100px) {
+  p {
+    font-size: 10px;
+    }
+}
+```
+
+and the following media query returns the content when the device's height is more than or equal to 350px:
+
+`@media (min-height: 350px) { /* CSS Rules */ }`
+
+Remember, the CSS inside the media query is applied only if the media type matches that of the device being used.
+
+## Responsive Images
+Making images responsive with CSS is actually very simple. Instead of applying an absolute width to an element:
+
+`img { width: 720px; }`
+
+You can use:
+```h
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+```
+The **max-width** property of 100% scales the image to fit the width of its container, but the image won't stretch wider than its original width. Setting the **display** property to block changes the image from an inline element (its default), to a block element on its own line. The **height** property of auto keeps the original aspect ratio of the image.
+
+## Retina Pictures
+The simplest way to make your images appear "retina" (and optimize them for retina displays) is to define their width and height values as only half of what the original file is.
+
+Here is an example of an image that is only using half of the original height and width:
+```h
+<style>
+  img { height: 250px; width: 250px; }
+</style>
+<img src="coolPic500x500" alt="A most excellent picture">
+```
+
+## Responsive Typography
+Instead of using em or px to size text, you can use viewport units for responsive typography. Viewport units, like percentages, are relative units, but they are based off different items. Viewport units are relative to the viewport dimensions (width or height) of a device, and percentages are relative to the size of the parent container element.
+
+The four different viewport units are:
+
+* vw: 10vw would be 10% of the viewport's width.
+* vh: 3vh would be 3% of the viewport's height.
+* vmin: 70vmin would be 70% of the viewport's smaller dimension (height vs. width).
+* vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width).
 
 
 
