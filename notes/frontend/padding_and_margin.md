@@ -1,6 +1,6 @@
-# CSS
+# Frontend
 
-## Padding and margin
+## CSS Padding and margin
 
 ### Example
 
