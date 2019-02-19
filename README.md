@@ -6,11 +6,9 @@
 ### Java
 * [MOOC](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md) 
 
-### HTML
-* [Basics](https://github.com/banjoanton/notebook/blob/master/notes/html/html_basics.md)
-
-### CSS (FCC)
-* [Basics](https://github.com/banjoanton/notebook/blob/master/notes/css/css_basics.md)
+### HTML & CSS
+* [HTML Basics](https://github.com/banjoanton/notebook/blob/master/notes/html/html_basics.md)
+* [CSS Basics](https://github.com/banjoanton/notebook/blob/master/notes/css/css_basics.md)
 * [Advanced](https://github.com/banjoanton/notebook/blob/master/notes/css/advanced.md)
 * [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/css/override_scheme.md)
 * [Padding and Margin](https://github.com/banjoanton/notebook/blob/master/notes/css/padding_and_margin.md)
