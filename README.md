@@ -15,5 +15,6 @@
   * [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/frontend/override_scheme.md)
   * [Padding and Margin](https://github.com/banjoanton/notebook/blob/master/notes/frontend/padding_and_margin.md)
   * [Basic Design](https://github.com/banjoanton/notebook/blob/master/notes/frontend/basic_design.md)
+  * [Responsive Web Design](https://github.com/banjoanton/notebook/blob/master/notes/frontend/responsive_web_design.md)
 
 ### [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
