@@ -1,6 +1,6 @@
-# HTML
+# Frontend
 
-## Basics
+## HTML Basics
 - [Standard layout](#standard-layout)
 - [Paragraph](#paragraph)
 - [Image](#image)
