@@ -25,6 +25,8 @@ To list all active directories: `screen -ls`
 
 To connect to a directory: `screen -r 9432` (replace the number with the one you want to use)
 
+To create a named session: `screen -s name`
+
 To use settings, press `ctrl+a`.
 * `d` to detach
 * `q` close all but the active one
