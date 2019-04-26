@@ -6,6 +6,9 @@
 ### Java
 * [MOOC](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md) 
 
+### Linux
+* [Bash](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
+
 ### Frontend
 - HTML (FCC)
   * [HTML Basics](https://github.com/banjoanton/notebook/blob/master/notes/frontend/html_basics.md)
