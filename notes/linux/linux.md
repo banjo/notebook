@@ -35,4 +35,18 @@ To use settings, press `ctrl+a`.
 
 Get IP addresses by writing: `ifconfig`
 
+## Configure PLEX as localhost
 
+The initial setup of Plex has to be done via an SSH tunnel, as the configuration is only allowed from localhost:
+
+On Linux or MacOS computers, you can create the tunnel with the following command:
+
+`ssh root@plex.server.ip -L 8888:localhost:32400`
+On Windows computers, you can create the tunnel by using PuttY:
+
+Open PuTTY, enter your server IP address in the hostname and SSH port. Or, if you already have your server session setup and saved, just load the existing session.
+* Go to Connection > SSH > Tunnels.
+* Fill in Source port as 8888 and Destination as localhost:32400.
+* Click on the Add button.
+* Navigate back to the session homepage now and click the Save button, then Open to connect to the server.
+* Open a web browser on your local computer and navigate to http://localhost:8888/web. You will be presented with the following login screen:
