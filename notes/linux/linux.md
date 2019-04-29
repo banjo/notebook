@@ -30,6 +30,7 @@ To create a named session: `screen -s name`
 To use settings, press `ctrl+a`.
 * `d` to detach
 * `q` close all but the active one
+* `n` to change session
 
 ## IP settings
 
