@@ -50,4 +50,10 @@ Open PuTTY, enter your server IP address in the hostname and SSH port. Or, if yo
 * Fill in Source port as 8888 and Destination as localhost:32400.
 * Click on the Add button.
 * Navigate back to the session homepage now and click the Save button, then Open to connect to the server.
-* Open a web browser on your local computer and navigate to http://localhost:8888/web. You will be presented with the following login screen:
+* Open a web browser on your local computer and navigate to http://localhost:8888/web.
+
+## Update UBUNTU
+
+* `sudo apt-get update        # Fetches the list of available updates`
+* `sudo apt-get upgrade       # Strictly upgrades the current packages`
+* `sudo apt-get dist-upgrade  # Installs updates (new ones)`
