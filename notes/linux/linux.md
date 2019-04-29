@@ -1,5 +1,8 @@
 # Linux commands
 
+## [Cheat Sheet](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/)
+Cheat Sheet for the most basic commands. 
+
 ## Sudo User
 
 Create a sudo user that isn't root. 
