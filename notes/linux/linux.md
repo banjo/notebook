@@ -4,8 +4,9 @@
 Cheat Sheet for the most basic commands. 
 
 ## Sudo User
-
 Create a sudo user that isn't root. 
+
+### First way
 
 ```bash
 su root
@@ -16,6 +17,13 @@ su banjo
 sudo usermod -s /bin/bash banjo
 su banjo
 cd ~
+```
+
+### Second way
+
+```bash
+adduser banjo
+usermod -aG sudo banjo
 ```
 
 ## Screen
