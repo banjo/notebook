@@ -43,6 +43,11 @@ To use settings, press `ctrl+a`.
 * `q` close all but the active one
 * `n` to change session
 
+Close a session:
+* Attach to session
+* Press `CTRL + A`
+* Type: `:quit`
+
 ## IP settings
 
 Get IP addresses by writing: `ifconfig`
