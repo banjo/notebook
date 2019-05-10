@@ -147,6 +147,21 @@ def loadPage(xpath, browser):
 
 ## Other
 
+### Time
+How to show how long time a loop takes
+
+import time
+`import time`
+
+Begin the time before a loop:
+`start = time.clock()`
+
+End the time at the end of a loop:
+`end = time.clock()`
+
+Get the final time in seconds, with 2 decimals:
+`final_time = round(end - time, 2)`
+
 ### Print in color
 
 ```p
