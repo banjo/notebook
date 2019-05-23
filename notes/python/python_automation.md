@@ -151,40 +151,101 @@ def loadPage(xpath, browser):
 Class with the most basic automations
 
 ```p
-import keyboard, pyautogui, time
+import keyboard
+import pyautogui
+import time
+import pandas as pd
+from pandas import ExcelWriter
+from pandas import ExcelFile
+
 
 class Auto:
-	
-	def click(self, x, y):
-		pyautogui.click(x, y)
-		time.sleep(2.5)
-		
-	def clear_text(self):
-		keyboard.press("ctrl")
-		time.sleep(0.2)
-		keyboard.press_and_release('a')
-		time.sleep(0.2)
-		keyboard.release("ctrl")
-		keyboard.press_and_release("backspace")
-		time.sleep(0.4)
-		
-	def find_picture(self, bild):
-		position = pyautogui.locateCenterOnScreen(bild)
 
-		if not position == None:
-			x, y = position[0], position[1]
-			return x, y
-		else:
-			return False
-	
-	def find_picture_in_region(self, bild, region):
-		position = pyautogui.locateCenterOnScreen(bild, region=region)
+    start = None
+    end = None
 
-		if not position == None:
-			x, y = position[0], position[1]
-			return x, y
-		else:
-			return False
+    def click(self, x, y):
+        pyautogui.click(x, y)
+        time.sleep(2.5)
+
+    def clear_text(self):
+        keyboard.press("ctrl")
+        time.sleep(0.2)
+        keyboard.press_and_release('a')
+        time.sleep(0.2)
+        keyboard.release("ctrl")
+        keyboard.press_and_release("backspace")
+        time.sleep(0.4)
+
+    def find_picture(self, bild):
+        position = pyautogui.locateCenterOnScreen(bild)
+
+        if not position == None:
+            x, y = position[0], position[1]
+            return x, y
+        else:
+            return False
+
+    def find_picture_in_region(self, bild, region):
+        position = pyautogui.locateCenterOnScreen(bild, region=region)
+
+        if not position == None:
+            x, y = position[0], position[1]
+            return x, y
+        else:
+            return False
+
+    def get_excel(self, excel_name, sheet_name):
+        """creates an pandas document from an excel file that can be read.
+        
+        Arguments:
+            excel_name {excel file} -- the name of the excel file
+            sheet_name {excel sheet} -- the name of the
+        
+        Returns:
+            [pandas file] -- [returns the pandas file that can be used later]
+        """
+        return pd.read_excel(excel_name, sheet_name)
+
+    def read_excel_column(self, excel_file, column_name):
+        """returns a list of that column in the excel file
+        
+        Arguments:
+            excel_file {pandas file} -- the pandas file that was created
+            column_name {[string]} -- [the name of the column]
+        
+        Returns:
+            [list] -- [list of everything in that column]
+        """
+        return excel_file[column_name]
+
+    def start_time():
+        self.start = time.clock()
+    
+    def end_time():
+        self.end = time.clock()
+    
+    def work_time():
+        """Returns time it took for a circle in seconds
+        
+        Returns:
+            [integer] -- [seconds it took for a loop]
+        """
+        return round(self.end - self.start, 2)
+
+    def estimated_time_left(loops_left):
+        """Estimation of how long time left it is in seconds, based on how many loops.
+        
+        Arguments:
+            loops_left {integer} -- how many loops until finished
+        
+        Returns:
+            integer -- time left in seconds
+        """
+        time_in_seconds = round(self.end - self.start, 2)
+        time_left = round(time_in_seconds * loops_left, 2)
+        return time_left
+
 ```
 ### Time
 How to show how long time a loop takes
