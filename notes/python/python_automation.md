@@ -165,10 +165,18 @@ class Auto:
     end = None
 
     def click(self, x, y):
+        """clicks on specified position
+        
+        Arguments:
+            x {integer} -- x position
+            y {integer} -- y position
+        """
         pyautogui.click(x, y)
-        time.sleep(2.5)
+        time.sleep(1.5)
 
     def clear_text(self):
+        """clears a field if it is marked
+        """
         keyboard.press("ctrl")
         time.sleep(0.2)
         keyboard.press_and_release('a')
@@ -178,6 +186,14 @@ class Auto:
         time.sleep(0.4)
 
     def find_picture(self, bild):
+        """returns position if there is a picture, else it returs false
+        
+        Arguments:
+            bild {.png file} -- a picture in .png
+        
+        Returns:
+            boolean or position -- position if the picture exists, else false
+        """
         position = pyautogui.locateCenterOnScreen(bild)
 
         if not position == None:
@@ -187,6 +203,14 @@ class Auto:
             return False
 
     def find_picture_in_region(self, bild, region):
+        """returns position if there is a picture, else it returs false
+        
+        Arguments:
+            bild {.png file} -- a picture in .png
+        
+        Returns:
+            boolean or position -- position if the picture exists, else false
+        """
         position = pyautogui.locateCenterOnScreen(bild, region=region)
 
         if not position == None:
@@ -226,25 +250,12 @@ class Auto:
         self.end = time.clock()
     
     def work_time(self):
-        """Returns time it took for a circle in seconds
+        """Returns time it took for a loop in seconds
         
         Returns:
             [integer] -- [seconds it took for a loop]
         """
         return round(self.end - self.start, 2)
-
-    def estimated_time_left(self, loops_left):
-        """Estimation of how long time left it is in seconds, based on how many loops.
-        
-        Arguments:
-            loops_left {integer} -- how many loops until finished
-        
-        Returns:
-            integer -- time left in seconds
-        """
-        time_in_seconds = round(self.end - self.start, 2)
-        time_left = round(time_in_seconds * loops_left, 2)
-        return time_left
     
     def append_to_file(self, name_of_file, text_string):
         """write to text file
@@ -255,6 +266,7 @@ class Auto:
         """
         with open(name_of_file, "a") as text_file:
             print(text_string, file=text_file)
+
 ```
 ### Time
 How to show how long time a loop takes
