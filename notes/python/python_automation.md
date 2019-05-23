@@ -147,6 +147,45 @@ def loadPage(xpath, browser):
 
 ## Other
 
+### Automation class
+Class with the most basic automations
+
+```p
+import keyboard, pyautogui, time
+
+class Auto:
+	
+	def click(self, x, y):
+		pyautogui.click(x, y)
+		time.sleep(2.5)
+		
+	def clear_text(self):
+		keyboard.press("ctrl")
+		time.sleep(0.2)
+		keyboard.press_and_release('a')
+		time.sleep(0.2)
+		keyboard.release("ctrl")
+		keyboard.press_and_release("backspace")
+		time.sleep(0.4)
+		
+	def find_picture(self, bild):
+		position = pyautogui.locateCenterOnScreen(bild)
+
+		if not position == None:
+			x, y = position[0], position[1]
+			return x, y
+		else:
+			return False
+	
+	def find_picture_in_region(self, bild, region):
+		position = pyautogui.locateCenterOnScreen(bild, region=region)
+
+		if not position == None:
+			x, y = position[0], position[1]
+			return x, y
+		else:
+			return False
+```
 ### Time
 How to show how long time a loop takes
 
