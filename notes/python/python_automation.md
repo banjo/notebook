@@ -219,13 +219,13 @@ class Auto:
         """
         return excel_file[column_name]
 
-    def start_time():
+    def start_time(self):
         self.start = time.clock()
     
-    def end_time():
+    def end_time(self):
         self.end = time.clock()
     
-    def work_time():
+    def work_time(self):
         """Returns time it took for a circle in seconds
         
         Returns:
@@ -233,7 +233,7 @@ class Auto:
         """
         return round(self.end - self.start, 2)
 
-    def estimated_time_left(loops_left):
+    def estimated_time_left(self, loops_left):
         """Estimation of how long time left it is in seconds, based on how many loops.
         
         Arguments:
@@ -245,7 +245,16 @@ class Auto:
         time_in_seconds = round(self.end - self.start, 2)
         time_left = round(time_in_seconds * loops_left, 2)
         return time_left
-
+    
+    def append_to_file(self, name_of_file, text_string):
+        """write to text file
+        
+        Arguments:
+            name_of_file {.txt file} -- the name of the text file
+            text_string {string} -- what you want to write to the text file
+        """
+        with open(name_of_file, "a") as text_file:
+            print(text_string, file=text_file)
 ```
 ### Time
 How to show how long time a loop takes
