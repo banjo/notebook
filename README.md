@@ -1,13 +1,16 @@
 # Programming
 
 ### Python
-* [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
+* Work automation
+  * [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
 
 ### Java
-* [MOOC](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
+* Helsinki MOOC notes
+  * [MOOC](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
 
 ### Linux
-* [Bash](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
+* Basic Bash
+  * [Bash](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
 
 ### Frontend
 - HTML (FCC)
@@ -19,7 +22,7 @@
   * [CSS Grid](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_grid.md)
 
 ### Templates
-Basic get-started templates
-* [Ajax POST](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax.md)
+* Basic get-started templates
+  * [Ajax POST](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax.md)
 
 ### [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
