@@ -25,5 +25,6 @@ Basic Bash
 Basic get-started templates
   * [Ajax POST](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax.md)
   * [Jinja Template](https://github.com/banjoanton/notebook/blob/master/notes/templates/jinja.md)
+  * [Flask Template](https://github.com/banjoanton/notebook/blob/master/notes/templates/flask.md)
 
 ### [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
