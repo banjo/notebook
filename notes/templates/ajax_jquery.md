@@ -7,7 +7,7 @@ A simple GET request using jQuery.
 function check_username() {
     var username = document.getElementById("user_input").value;
     var label = document.getElementById("username_status");
-    $.get("/check?username=" + username, function (data) {
+    $.get("/check", {username: username}, function (data) {
         if (data == true) {
             label.innerHTML = "Username available";
         } else {
