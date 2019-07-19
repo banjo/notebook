@@ -30,4 +30,5 @@ Basic get-started templates
   * [Navbar using Jinja](https://github.com/banjoanton/notebook/blob/master/notes/templates/navbar.md)
   * [Login decorator in Flask](https://github.com/banjoanton/notebook/blob/master/notes/templates/login_decorator.md)
 
-### [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+### [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+### [GIT cheat sheet](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
