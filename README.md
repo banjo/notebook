@@ -26,6 +26,7 @@ Basic get-started templates
   * [Ajax POST](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax.md)
   * [Jinja Template](https://github.com/banjoanton/notebook/blob/master/notes/templates/jinja.md)
   * [Flask Template](https://github.com/banjoanton/notebook/blob/master/notes/templates/flask.md)
+  * [Flask session](https://github.com/banjoanton/notebook/blob/master/notes/templates/flask_session.md)
   * [Ajax GET using jQuery](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax_jquery.md)
   * [Navbar using Jinja](https://github.com/banjoanton/notebook/blob/master/notes/templates/navbar.md)
   * [Login decorator in Flask](https://github.com/banjoanton/notebook/blob/master/notes/templates/login_decorator.md)
