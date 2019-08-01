@@ -1,5 +1,8 @@
 # Programming
 
+Some gathered notes, summaries and cheat sheets on programming.
+---
+
 ### Python
 Work automation
   * [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
@@ -32,10 +35,10 @@ Basic get-started templates
   * [Login decorator in Flask](https://github.com/banjoanton/notebook/blob/master/notes/templates/login_decorator.md)
 ### Cheat Sheets
 Cheat sheets made by others.
-* [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* Git
- - [Download PDF](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
- - [Open URL](https://imgur.com/a/jJbAnko)
+- [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- Git
+  * [Download PDF](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
+  * [Open URL](https://imgur.com/a/jJbAnko)
  
  ### Summaries
  Summaries on different topics and books.
