@@ -3,29 +3,26 @@
 ## Some gathered notes, summaries and cheat sheets on programming.
 
 ### Python
-
 -   [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
 
 ### Java
-
 -   [Helsinki MOOC notes](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
 
 ### React
-- [Backend with Express](https://github.com/banjoanton/notebook/blob/master/notes/react/express.md)
+-   [Backend with Express](https://github.com/banjoanton/notebook/blob/master/notes/react/express.md)
 
-### Linux
+### HTML and CSS by FreeCodeCamp
 
--   [Linux basics](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
-
-### Frontend by FreeCodeCamp
-
--   HTML (FCC)
+-   HTML
     -   [HTML Basics](https://github.com/banjoanton/notebook/blob/master/notes/frontend/html_basics.md)
--   CSS (FCC)
+-   CSS
     -   [CSS Basics](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_basics.md)
     -   [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/frontend/override_scheme.md)
     -   [CSS Flexbox](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_flexbox.md)
     -   [CSS Grid](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_grid.md)
+    
+### Other
+-   [Linux basics](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
 
 ### Templates
 
