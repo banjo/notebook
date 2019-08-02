@@ -26,13 +26,16 @@ Basic Bash
 
 ### Templates
 Basic get-started templates
+- JavaScript
   * [Ajax POST](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax.md)
+  * [Ajax GET using jQuery](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax_jquery.md)
+- Python
   * [Jinja Template](https://github.com/banjoanton/notebook/blob/master/notes/templates/jinja.md)
   * [Flask Template](https://github.com/banjoanton/notebook/blob/master/notes/templates/flask.md)
   * [Flask session](https://github.com/banjoanton/notebook/blob/master/notes/templates/flask_session.md)
-  * [Ajax GET using jQuery](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax_jquery.md)
   * [Navbar using Jinja](https://github.com/banjoanton/notebook/blob/master/notes/templates/navbar.md)
   * [Login decorator in Flask](https://github.com/banjoanton/notebook/blob/master/notes/templates/login_decorator.md)
+ 
 ### Cheat Sheets
 Cheat sheets made by others.
 - [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -41,6 +44,6 @@ Cheat sheets made by others.
   * [Open URL](https://imgur.com/a/jJbAnko)
  
  ### Summaries
- Summaries on different topics and books.
+ Summaries on different topics and books, made by others.
  * [Clean Code](https://github.com/jbarroso/clean-code)
  
