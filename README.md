@@ -4,18 +4,15 @@ Some gathered notes, summaries and cheat sheets on programming.
 ---
 
 ### Python
-Work automation
   * [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
 
 ### Java
-Helsinki MOOC notes
-  * [MOOC](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
+  * [Helsinki MOOC notes](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
 
 ### Linux
-Basic Bash
-  * [Bash](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
+  * [Linux basics](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
 
-### Frontend
+### Frontend by FreeCodeCamp
 - HTML (FCC)
   * [HTML Basics](https://github.com/banjoanton/notebook/blob/master/notes/frontend/html_basics.md)
 - CSS (FCC)
@@ -25,7 +22,7 @@ Basic Bash
   * [CSS Grid](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_grid.md)
 
 ### Templates
-Basic get-started templates
+Basic useful templates.
 - JavaScript
   * [Ajax POST](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax.md)
   * [Ajax GET using jQuery](https://github.com/banjoanton/notebook/blob/master/notes/templates/ajax_jquery.md)
@@ -42,6 +39,7 @@ Cheat sheets made by others.
 - Git
   * [Download PDF](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
   * [Open URL](https://imgur.com/a/jJbAnko)
+- [Linux commands](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/)
  
  ### Summaries
  Summaries on different topics and books, made by others.
