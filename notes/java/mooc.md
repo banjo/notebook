@@ -1,39 +1,41 @@
 # Java
 
 ## MOOC
+
 Notes from Helsinki MOOC.
 
-- [Java](#Java)
-  - [MOOC](#MOOC)
-    - [Iterator](#Iterator)
-      - [Iterator to print](#Iterator-to-print)
-      - [Print with more than one "HasNext"](#Print-with-more-than-one-HasNext)
-      - [Remove with iterator](#Remove-with-iterator)
-    - [Comparator](#Comparator)
-      - [Sort](#Sort)
-    - [Enumerator](#Enumerator)
-      - [Enumerator basics](#Enumerator-basics)
-      - [Enumerator with names](#Enumerator-with-names)
-    - [Interface](#Interface)
-      - [Create readable](#Create-readable)
-      - [Ebook Example](#Ebook-Example)
-      - [Interface example](#Interface-example)
-    - [Swing](#Swing)
-      - [Basic UserInterface](#Basic-UserInterface)
-      - [Border Layout](#Border-Layout)
-      - [Box Layout](#Box-Layout)
-      - [Grid Layout](#Grid-Layout)
-      - [Button Group](#Button-Group)
-      - [Basic Action Listener](#Basic-Action-Listener)
-      - [Action Listener With Action](#Action-Listener-With-Action)
-      - [Action Listener with Multiple Buttons](#Action-Listener-with-Multiple-Buttons)
-      - [Basic jPanel](#Basic-jPanel)
-      - [jPanel as Class](#jPanel-as-Class)
-      - [jPanel Best Practice](#jPanel-Best-Practice)
-      - [jPanel with Graphics](#jPanel-with-Graphics)
-    - [Regular Expressions](#Regular-Expressions)
+- [Java](#java)
+  - [MOOC](#mooc)
+    - [Iterator](#iterator)
+      - [Iterator to print](#iterator-to-print)
+      - [Print with more than one "HasNext"](#print-with-more-than-one-hasnext)
+      - [Remove with iterator](#remove-with-iterator)
+    - [Comparator](#comparator)
+      - [Sort](#sort)
+    - [Enumerator](#enumerator)
+      - [Enumerator basics](#enumerator-basics)
+      - [Enumerator with names](#enumerator-with-names)
+    - [Interface](#interface)
+      - [Create readable](#create-readable)
+      - [Ebook Example](#ebook-example)
+      - [Interface example](#interface-example)
+    - [Swing](#swing)
+      - [Basic UserInterface](#basic-userinterface)
+      - [Border Layout](#border-layout)
+      - [Box Layout](#box-layout)
+      - [Grid Layout](#grid-layout)
+      - [Button Group](#button-group)
+      - [Basic Action Listener](#basic-action-listener)
+      - [Action Listener With Action](#action-listener-with-action)
+      - [Action Listener with Multiple Buttons](#action-listener-with-multiple-buttons)
+      - [Basic jPanel](#basic-jpanel)
+      - [jPanel as Class](#jpanel-as-class)
+      - [jPanel Best Practice](#jpanel-best-practice)
+      - [jPanel with Graphics](#jpanel-with-graphics)
+    - [Regular Expressions](#regular-expressions)
 
 ### Iterator
+
 How to use an iterator. Below is an example that will use an iterator.
 
 ```java
@@ -57,6 +59,7 @@ public class Hand {
 ```
 
 #### Iterator to print
+
 ```java
 public void print() {
     Iterator<Card> iterator = cards.iterator();
@@ -85,7 +88,9 @@ public void print(Education education) {
 ```
 
 #### Remove with iterator
+
 You can't remove objects while iterating through them, in that case you can use an iterator.
+
 ```java
 public class Hand {
     // ...
@@ -102,9 +107,11 @@ public class Hand {
 ```
 
 ### Comparator
+
 How to use a comparator to sort.
 
 #### Sort
+
 ```java
 	// sort movies based on their rating
 public class FilmComparator implements Comparator<Film> {
@@ -122,6 +129,7 @@ public class FilmComparator implements Comparator<Film> {
 ```
 
 Main might look like this:
+
 ```java
 List<Film> films = Arrays.asList(goneWithTheWind, theBridgesOfMadisonCounty, eraserhead);
 System.out.println("The films before sorting: " + films);
@@ -132,6 +140,7 @@ System.out.println("The films after sorting: " + films);
 ### Enumerator
 
 #### Enumerator basics
+
 This is how an enumerator looks - with 4 suits in a card deck.
 
 ```java
@@ -201,6 +210,7 @@ public enum Colour {
 ```
 
 ### Interface
+
 Basics on how to use an interface.
 
 #### Create readable
@@ -258,7 +268,9 @@ public class EBook implements Readable {
 ```
 
 #### Interface example
+
 Simple example how to implement an interface called Readable.
+
 ```java
 public interface Readable {
   // everything the implements Readable must have a function called read which returns a string.
@@ -267,6 +279,7 @@ public interface Readable {
 ```
 
 How to use the Readable interface.
+
 ```java
  // uses the println to read the class the implemented readable
 SMS message = new SMS("ope", "Awesome stuff!");
@@ -277,9 +290,11 @@ messages.add(new SMS("unknown number", "I hid the body.");
 ```
 
 ### Swing
+
 How to create a java application using Swing.
 
 #### Basic UserInterface
+
 This is a basic program with Swing.
 
 ```java
@@ -326,7 +341,9 @@ public class Main {
     }
 }
 ```
+
 #### Border Layout
+
 How border layout works in Swing.
 
 ```java
@@ -395,6 +412,7 @@ private void createComponents(Container container) {
 Picture [here](https://drive.google.com/open?id=1aj7AZLfWDhFsrwLzptU2VjJUie__sHqm).
 
 #### Button Group
+
 How to create a button group in Swing.
 
 ```java
@@ -413,6 +431,7 @@ private void createComponents(Container container) {
 ```
 
 #### Basic Action Listener
+
 How to use an action listener.
 
 ```java
@@ -474,6 +493,7 @@ private void createComponents(Container container) {
 ```
 
 #### Action Listener with Multiple Buttons
+
 Basic way to use action listener with multiple buttons.
 
 ```java
@@ -497,6 +517,7 @@ button.addActionListener(ActionListenerExample);
 ```
 
 #### Basic jPanel
+
 Basic jPanel without inheritance.
 
 ```java
@@ -516,6 +537,7 @@ private JPanel createPanel() {
 Picture can be seen [here](https://drive.google.com/open?id=1yjA0ofoYlmvkGN2LvyKWrhvB9WTus5Yv).
 
 #### jPanel as Class
+
 The class looks like this.
 
 ```java
@@ -546,6 +568,7 @@ private void createComponents(Container container) {
 ```
 
 #### jPanel Best Practice
+
 According to MOOC it should look like this:
 
 ```java
@@ -581,6 +604,7 @@ private void createComponents(Container container) {
 ```
 
 #### jPanel with Graphics
+
 Created with paintComponent.
 
 Basic layout:
@@ -609,6 +633,7 @@ protected void paintComponent(Graphics graphics) {
     graphics.fillRect(0, 0, 200, 10);
 }
 ```
+
 x, y, length, height (from top left on x and y)
 Picture [here](https://drive.google.com/open?id=1n7qSP0YUSrI3TmWraaIS30XrA2RqayH6).
 
@@ -634,51 +659,51 @@ if (num.matches("01[0-9]{7}") {
 
 // specific numbers, [] and {}.
 String regex = "01[0-9]{7}"         // starts with "01", followed by 7 numbers between 0 and 9.
-String example = "015748337"         // correct match
-String wrongExample = "02443342"     // no match
+String example = "015748337"        // correct match
+String wrongExample = "02443342"    // no match
 // | - OR operator
-String regex = "00|111"     // if the example is exactly 00 or 111, its a match (like equals, not contain)
-String example = "00"        // correct example
-String wrongExample = "11"     // incorrect
+String regex = "00|111"         // if the example is exactly 00 or 111, its a match (like equals, not contain)
+String example = "00"           // correct example
+String wrongExample = "11"      // incorrect
 
 // () - round brackets
-String regex = "0(0|1)"        // limit choice to only that part of the string. Starts with 0, and ends with 0 or 1.
-String example = "01"          // correct
-String example = "00"        // correct
-String wrongExample = "11"    // incorrect
+String regex = "0(0|1)"         // limit choice to only that part of the string. Starts with 0, and ends with 0 or 1.
+String example = "01"           // correct
+String example = "00"           // correct
+String wrongExample = "11"      // incorrect
 
 // * - repitition symbol from 0 to n
-String regex = "trolo(lo)*"         // checks for repition from 0 to n times on the last part "lo".
-String example = "trolololololo"     // correct
-String wrongExample = "trololol"     // incorrect
+String regex = "trolo(lo)*"             // checks for repition from 0 to n times on the last part "lo".
+String example = "trolololololo"        // correct
+String wrongExample = "trololol"        // incorrect
 
 // + - repitition symbol from 0 to 1
-String regex = "trolo(lo)+"         // checks for repition 0 or 1 times".
-String example = "trololo"             // correct
-String wrongExample = "trolololo"     // incorrect
+String regex = "trolo(lo)+"             // checks for repition 0 or 1 times".
+String example = "trololo"              // correct
+String wrongExample = "trolololo"       // incorrect
 
 // ? - repitition symbol from 0 or 1
-String regex = "You have accidentally (deleted)? the whole name"         // checks for repition from 0 or 1 times.
-String example = "You have accidentally the whole name"                 // correct
-String wrongExample = "trolololo"                                         // incorrect
+String regex = "You have accidentally (deleted)? the whole name"            // checks for repition from 0 or 1 times.
+String example = "You have accidentally the whole name"                     // correct
+String wrongExample = "trolololo"                                           // incorrect
 
 // {a} - repitition of a times
-String regex = "(10){2}"         // checks for repition of 10 two times.
-String example = "1010"         // correct
-String wrongExample = "101010"     // incorrect
+String regex = "(10){2}"            // checks for repition of 10 two times.
+String example = "1010"             // correct
+String wrongExample = "101010"      // incorrect
 // {a, b} - repitition of a to b times
-String regex = "(1){2, 4}"     // checks for repition of 1 for 2, 3 or 4 times.
-String example = "111"         // correct
-String wrongExample = "1"     // incorrect
+String regex = "(1){2, 4}"      // checks for repition of 1 for 2, 3 or 4 times.
+String example = "111"          // correct
+String wrongExample = "1"       // incorrect
 
 // {a,} - repitition of a to n times
-String regex = "(1){2,}"     // checks for repition of 1 for 2 or more times.
-String example = "1111"     // correct
-String wrongExample = "1"     // incorrect
+String regex = "(1){2,}"        // checks for repition of 1 for 2 or more times.
+String example = "1111"         // correct
+String wrongExample = "1"       // incorrect
 
 // [] - range of numbers
-String regex = "[2-36-9]"     // same as (2|3|6|7|8|9).
-String example = "7"         // correct
-String wrongExample = "1"     // incorrect
+String regex = "[2-36-9]"       // same as (2|3|6|7|8|9).
+String example = "7"            // correct
+String wrongExample = "1"       // incorrect
 
 ```
