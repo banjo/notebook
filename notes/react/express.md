@@ -2,6 +2,15 @@
 
 Basic initiation of a backend server using Express and node.js. From Fullstack Open by Helsinki University.
 
+  - [Initiate directory](#initiate-directory)
+  - [Nodemon](#nodemon)
+  - [Express](#express)
+    - [Basic configurations](#basic-configurations)
+    - [Fetching a single resource](#fetching-a-single-resource)
+    - [Deleting resources](#deleting-resources)
+    - [Receiving data](#receiving-data)
+  - [REST Client](#rest-client)
+
 ## Initiate directory
 
 1. Navigate to directory and use `npm init` to initiate the folder.
