@@ -2,6 +2,7 @@
 
 Basic initiation of a backend server using Express and node.js. From Fullstack Open by Helsinki University.
 
+- [React backend using Express](#react-backend-using-express)
   - [Initiate directory](#initiate-directory)
   - [Nodemon](#nodemon)
   - [Express](#express)
@@ -10,6 +11,7 @@ Basic initiation of a backend server using Express and node.js. From Fullstack O
     - [Deleting resources](#deleting-resources)
     - [Receiving data](#receiving-data)
   - [REST Client](#rest-client)
+  - [Using middleware](#using-middleware)
 
 ## Initiate directory
 
@@ -197,3 +199,31 @@ Use the REST Client plugin in Visual Studio Code to test your HTTP requests.
 1. Create a file with `.rest` extension in the working directory, in a folder called `requests`.
 2. Write the request you want to try in the follow format: `get http://localhost:3001/notes`.
 3. Test it by pressing **Send Request**.
+
+## Using middleware
+
+the `body-parser` that was used previously is a **middleware**. They are used for `request` and `response` objects. You can use several at the same time. They are executed in the order they were takin into express.
+
+Implement your own middleware like this:
+
+```javascript
+const requestLogger = (request, response, next) => {
+    console.log("Method:", request.method);
+    console.log("Path:  ", request.path);
+    console.log("Body:  ", request.body);
+    console.log("---");
+    next();
+};
+```
+
+Activate it like this with the `app.use(requestLogger)` keyword.
+
+---
+
+A middleware can be used to catch request to non-existsing routes.
+
+```javascript
+const unknownEndpoint = (req, res) => {
+    res.status(404).send({ error: "unknown endpoint" });
+};
+```
