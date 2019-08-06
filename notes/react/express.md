@@ -227,3 +227,16 @@ const unknownEndpoint = (req, res) => {
     res.status(404).send({ error: "unknown endpoint" });
 };
 ```
+
+---
+By default, apps cannot communicate on different ports (e.g :3000 and :3001) unless you use the CORS middleware. CORS is not limited to node or react - it's an universal principle.
+
+Install cors with the command `npm install cors --save`.
+
+Allow requests from all origins with the following code:
+
+```javascript
+const cors = require('cors')
+
+app.use(cors())
+```
