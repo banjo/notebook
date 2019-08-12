@@ -362,7 +362,7 @@ const getAll = () => {
 ### Proxy
 Changes on the frontend have caused it to no longer work in development mode (when started with command npm start), as the connection to the backend does not work. This is due to changes the adresses to *relative* ones.
 
-This is simple to solve with a proxy. If the **backend** is at *localhost:3001*, add that to the `package.json`, `proxy` part.
+This is simple to solve with a proxy. If the **backend** is at *localhost:3001*, add that to the `package.json` in the **frontend**, `proxy` part. This only works if it is created with *create-react-app*. 
 
 ```javascript
 {

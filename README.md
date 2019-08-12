@@ -31,8 +31,6 @@
 
 ### Templates
 
-Basic useful templates.
-
 -   JavaScript
     -   [Ajax POST](https://github.com/banjoanton/notebook/blob/master/notes/templates/javascript/ajax.md)
     -   [Ajax GET using jQuery](https://github.com/banjoanton/notebook/blob/master/notes/templates/javascript/ajax_jquery.md)
@@ -45,16 +43,12 @@ Basic useful templates.
 
 ### Cheat Sheets
 
-Cheat sheets made by others.
-
 -   [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 -   Git
-    -   [Download PDF](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
-    -   [Open URL](https://imgur.com/a/jJbAnko)
+    -   [Atlassian](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
+    -   [Github](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
 -   [Linux commands](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/pdf/)
 
 ### Summaries
-
-Summaries on different topics and books, made by others.
 
 -   [Clean Code](https://github.com/jbarroso/clean-code)
