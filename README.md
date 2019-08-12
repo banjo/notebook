@@ -3,13 +3,17 @@
 ## Some gathered notes, summaries and cheat sheets on programming.
 
 ### Python
+
 -   [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
 
 ### Java
+
 -   [Helsinki MOOC notes](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
 
 ### React
+
 -   [Backend with Express](https://github.com/banjoanton/notebook/blob/master/notes/react/express.md)
+-   [Database with MongoDB](https://github.com/banjoanton/notebook/blob/master/notes/react/mongodb.md)
 
 ### HTML and CSS by FreeCodeCamp
 
@@ -20,8 +24,9 @@
     -   [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/frontend/override_scheme.md)
     -   [CSS Flexbox](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_flexbox.md)
     -   [CSS Grid](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_grid.md)
-    
+
 ### Other
+
 -   [Linux basics](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
 
 ### Templates
