@@ -196,17 +196,17 @@ MONGODB_URI=mongodb+srv://fullstack:sekred@cluster0-ostce.mongodb.net/note-app?r
 PORT=3001
 ```
 
-The PORT is also stored in this file.
+The `PORT` is also stored in this file.
 
 It's important to **add the .env file to your .gitignore file**.
 
 At the top of your `index.js` file, import your configurations:
 
-`require("dotenv").config()`
+```require("dotenv").config()```
 
 To use an environment variable, use `process.env.PORT` for example.
 
-## Updateing thre rest of the backend
+## Updating thre rest of the backend
 
 ### Changing the POST request
 
