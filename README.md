@@ -2,10 +2,6 @@
 
 ## Some gathered notes, summaries and cheat sheets on programming.
 
-### Python
-
--   [Automation](https://github.com/banjoanton/notebook/blob/master/notes/python/python_automation.md)
-
 ### Java
 
 -   [Helsinki MOOC notes](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
