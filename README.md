@@ -25,6 +25,10 @@
     -   [CSS Flexbox](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_flexbox.md)
     -   [CSS Grid](https://github.com/banjoanton/notebook/blob/master/notes/frontend/css_grid.md)
 
+### Hosting
+
+-   [SQL Server on VPS](https://github.com/banjoanton/notebook/blob/master/notes/sql/hostsql.md)
+
 ### Other
 
 -   [Linux basics](https://github.com/banjoanton/notebook/blob/master/notes/linux/linux.md)
