@@ -6,6 +6,9 @@
 
 -   [Helsinki MOOC notes](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
 
+### Python
+-   [Scraping with BS4 and Requests](https://github.com/banjoanton/notebook/blob/master/notes/python/scraping.md)
+
 ### React
 
 -   [Backend with Express](https://github.com/banjoanton/notebook/blob/master/notes/react/express.md)
