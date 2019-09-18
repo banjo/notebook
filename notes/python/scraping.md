@@ -45,10 +45,34 @@ print(soup.prettify())
 
 ## Scrape with BS4
 
-### Use select
-Returns a list or a single element
+### Use CSS selector
+Returns a list of the element. Copy address from Chrome.
 ```python
 samples = soup.select("div > div:nth-child(4) > div:nth-child(4)")
+```
+
+Return single element with `select_one()`.
+
+
+You can find tags:
+```python
+samples = soup.select("a")
+```
+
+Chain tags in the following order: (html -> head -> a)
+```python
+samples = soup.select("html head a")
+```
+
+Chain tags in the exact following order: (html -> head -> a)
+```python
+samples = soup.select("html > head > a")
+```
+
+Use ID or CSS class selectors
+```python
+sampples_id = soup.select("#id")
+samples_class = soup.select(".class")
 ```
 
 ### Use find_all
@@ -63,6 +87,10 @@ samples = soup.find_all(id="specific_id")
 ```
 
 Return all elements with a "a" tag with a specific CSS class:
+```python
+samples = soup.find_all("a", "specific_css_class")
+```
+Or more specific:
 ```python
 samples = soup.find_all("a", class_="specific_css_class")
 ```
