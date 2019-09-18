@@ -34,7 +34,7 @@ content = result.content
 ```
 ### Make soup out of content:
 ```python
-soup = BeautifulSoup(soup, features="lxml")
+soup = BeautifulSoup(content, features="lxml")
 ```
 
 ### EXTRA:
