@@ -49,9 +49,9 @@ import keyboard, time
 
 # ctrl + hotkey
 keyboard.press("ctrl")
-keyboard.press('a')
-time.sleep(0.5)
-keyboard.release('a')
+time.sleep(0.3)
+keyboard.send("c")
+time.sleep(0.3)
 keyboard.release("ctrl")
 
 # backspace
