@@ -8,6 +8,7 @@
 
 ### Python
 -   [Scraping with BS4 and Requests](https://github.com/banjoanton/notebook/blob/master/notes/python/scraping.md)
+-   [Virtual Environment](https://github.com/banjoanton/notebook/blob/master/notes/python/virtual_environments.md)
 
 ### React
 
