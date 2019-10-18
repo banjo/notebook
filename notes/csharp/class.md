@@ -283,6 +283,18 @@ class Employee
 ```
 The manager would then get all the properties and attributes.
 
+To create the constructor, use the base keyword:
+
+```csharp
+class Manager : Employee
+{
+    public Manager(string name) : base(name: name, salary: 100000){
+        //...
+    }
+}
+```
+
+
 ## Abstract classes
 Abstract classes cannot be initited, only inherited. Use the `abstract` keyword for the class.
 
