@@ -12,6 +12,7 @@
 
 ## C#
 - [Classes](https://github.com/banjoanton/notebook/blob/master/notes/csharp/class.md)
+- [Bitwise operators](https://github.com/banjoanton/notebook/blob/master/notes/csharp/binary.md)
 
 ### Python
 -   [Scraping with BS4 and Requests](https://github.com/banjoanton/notebook/blob/master/notes/python/scraping.md)
