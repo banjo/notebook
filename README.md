@@ -10,9 +10,10 @@
 
 -   [Helsinki MOOC notes](https://github.com/banjoanton/notebook/blob/master/notes/java/mooc.md)
 
-## C#
+### C#
 - [Classes](https://github.com/banjoanton/notebook/blob/master/notes/csharp/class.md)
 - [Bitwise operators](https://github.com/banjoanton/notebook/blob/master/notes/csharp/binary.md)
+- [Generics](https://github.com/banjoanton/notebook/blob/master/notes/csharp/generic.md)
 
 ### Python
 -   [Scraping with BS4 and Requests](https://github.com/banjoanton/notebook/blob/master/notes/python/scraping.md)

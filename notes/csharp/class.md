@@ -16,6 +16,8 @@
   - [Sealed classes](#sealed-classes)
   - [Interface](#interface)
     - [Interface polymorphishm](#interface-polymorphishm)
+  - [Other](#other)
+    - [Collections](#collections)
 
 ## Basic class
 
@@ -123,6 +125,11 @@ dm.MakeCappucino();
 
 // get property
 Console.WriteLine(dm.Age);
+```
+
+You can initiate it like this:
+```csharp
+DrinksMachine dm = new DrinksMachine() { Age = 10, Location = "Huddersfield" };
 ```
 
 ## Static class
@@ -451,4 +458,33 @@ public class Coffee: IBeverage, IInventoryItem
 {
     // class
 }
+```
+
+## Other
+
+### Collections
+Whenever you put an object in an collection, it turns into an objet. You need to cast it back to the origin object to use it.
+
+```csharp
+// Create a new ArrayList collection.
+ArrayList beverages = new ArrayList();
+
+
+// Create some items to add to the collection.
+Coffee coffee1 = new Coffee(4, "Arabica", "Columbia");
+Coffee coffee2 = new Coffee(3, "Arabica", "Vietnam");
+Coffee coffee3 = new Coffee(4, "Robusta", "Indonesia");
+
+
+// Add the items to the collection.
+// Items are implicitly cast to the Object type when you add them.
+beverages.Add(coffee1);
+beverages.Add(coffee2);
+beverages.Add(coffee3);
+
+
+// Retrieve items from the collection.
+// Items must be explicitly cast back to their original type.
+Coffee firstCoffee = (Coffee)beverages[0];
+Coffee secondCoffee = (Coffee)beverages[1];
 ```
