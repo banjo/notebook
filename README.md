@@ -30,11 +30,11 @@
 ### CSS
 -   [CSS Basics](https://github.com/banjoanton/notebook/blob/master/notes/css/css_basics.md)
 -   [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/css/override_scheme.md)
--	  [CSS Tips](https://github.com/banjoanton/notebook/blob/master/notes/css/css_tips.md)
+- [CSS Tips](https://github.com/banjoanton/notebook/blob/master/notes/css/css_tips.md)
 
 ### Hosting
-
 -   [SQL Server on VPS](https://github.com/banjoanton/notebook/blob/master/notes/sql/hostsql.md)
+-   [React + Express on Heroku](https://github.com/banjoanton/notebook/blob/master/notes/hosting/heroku.md)
 
 ### Other
 
