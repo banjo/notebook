@@ -9,7 +9,13 @@ app.get('*', (req, res) => {
 });
 ```
 
-### 2. Add proxy to localhost
+### 2. Serve from your `dist`/`build` folder
+Include this line to serve from your `build` folder. Choose the right folder.
+```javascript
+app.use(express.static('dist'));
+```
+
+### 3. Add proxy to localhost
 
 If your server, for example, listens to port `5000`, make the proxy listen to that port.
 
@@ -25,7 +31,7 @@ server.listen(process.env.PORT || 5000, () => {
 "proxy": "http://localhost:5000"
 ```
 
-### 3. Add scripts
+### 4. Add scripts
 
 These are the important scripts:
 
@@ -36,7 +42,7 @@ These are the important scripts:
         "heroku-postbuild": "npm install && npm run build"
 ```
 
-### 4. Deploy to Heroku
+### 5. Deploy to Heroku
 ```bash
 # remove git build (optional)
 $ rm -rf .git
