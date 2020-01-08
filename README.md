@@ -19,6 +19,7 @@
 -   [Scraping with BS4 and Requests](https://github.com/banjoanton/notebook/blob/master/notes/python/scraping.md)
 -   [Virtual Environment](https://github.com/banjoanton/notebook/blob/master/notes/python/virtual_environments.md)
 -   [Flask templates](https://github.com/banjoanton/notebook/blob/master/notes/python/flask.md)
+-   [Printing](https://github.com/banjoanton/notebook/blob/master/notes/python/print.md)
 
 ### React
 -   [Backend with Express](https://github.com/banjoanton/notebook/blob/master/notes/react/express.md)
