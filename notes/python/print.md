@@ -4,5 +4,5 @@
 To use as, for example, a loading bar.
 
 ```python
-print("\r hello", end="", flush=True)
+print("hello", end="\r", flush=True)
 ```
