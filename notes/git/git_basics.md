@@ -34,3 +34,29 @@ How to branch for a bug fix/new feature and merge the changes.
 # merge with branch
 > git merge branch_name
 ```
+
+### Rebase
+Keep a clean history with rebase.
+* `dev` - the main branch
+* `feature` - the newly created branch
+
+```bash
+# checkout new branch
+> git checkout -b feature
+
+# make commits
+> ...
+
+# (if long branch, do occasional rebases)
+> git checkout dev
+> git pull --rebase
+> git checkout feature
+> git rebase dev
+
+# merge when done
+> git checkout dev
+> git merge feature
+
+# delete branch
+> git branch -d feature
+```
