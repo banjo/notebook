@@ -33,6 +33,9 @@
 -   [Override Scheme](https://github.com/banjoanton/notebook/blob/master/notes/css/override_scheme.md)
 - [CSS Tips](https://github.com/banjoanton/notebook/blob/master/notes/css/css_tips.md)
 
+### Git
+- [Git basics](https://github.com/banjoanton/notebook/blob/master/notes/git/git_basics.md)
+
 ### Hosting
 -   [SQL Server on VPS](https://github.com/banjoanton/notebook/blob/master/notes/sql/hostsql.md)
 -   [React + Express on Heroku](https://github.com/banjoanton/notebook/blob/master/notes/hosting/heroku.md)
