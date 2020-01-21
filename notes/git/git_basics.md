@@ -34,6 +34,7 @@ How to branch for a bug fix/new feature and merge the changes.
 # merge with branch
 > git merge branch_name
 ```
+<<<<<<< HEAD
 
 ### Rebase
 Keep a clean history with rebase.
