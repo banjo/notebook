@@ -40,6 +40,8 @@ Keep a clean history with rebase.
 * `dev` - the main branch
 * `feature` - the newly created branch
 
+Always rebase before a merge.
+
 ```bash
 # checkout new branch
 > git checkout -b feature
@@ -47,7 +49,7 @@ Keep a clean history with rebase.
 # make commits
 > ...
 
-# (if long branch, do occasional rebases)
+# make a pull with rebase before merge (if long branch, do occasional rebases)
 > git checkout dev
 > git pull --rebase
 > git checkout feature
