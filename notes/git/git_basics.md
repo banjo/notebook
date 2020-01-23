@@ -70,7 +70,11 @@ Always rebase before a merge.
 
 ## Aliases
 
-Some good aliases I have stumbled upon.
+Some good aliases I have stumbled upon. It is possible to either add by global command or to the `.gitconfig` file. Get the location of the file with the following command (look at the file name):
+
+```bash
+git config --global --edit
+```
 
 ### Logline
 
@@ -82,4 +86,28 @@ Print your git log much better with this alias.
 
 # call alias
 > git logline
+```
+
+### Contributors by merge
+
+Get all contributors ranked by merge
+
+```bash
+# create alias
+> git config --global alias.contributors "shortlog -sn --no-merges"
+
+# call alias
+> git contributors
+```
+
+### Delete local branches
+
+Delete all local branches
+
+```bash
+# add to file
+deletebranches = !git branch --merged | grep -v '*' | xargs -n 1 git branch -d
+
+# call alias
+> git deletebranches
 ```
