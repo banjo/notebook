@@ -1,7 +1,9 @@
 # Git basics
+
 Some simple explanations of git basics.
 
 ## Workflows
+
 Different workflows for git.
 
 ### Commit
@@ -16,6 +18,7 @@ Different workflows for git.
 ```
 
 ### Branch and merge
+
 How to branch for a bug fix/new feature and merge the changes.
 
 ```bash
@@ -36,9 +39,11 @@ How to branch for a bug fix/new feature and merge the changes.
 ```
 
 ### Rebase
+
 Keep a clean history with rebase.
-* `dev` - the main branch
-* `feature` - the newly created branch
+
+- `dev` - the main branch
+- `feature` - the newly created branch
 
 Always rebase before a merge.
 
@@ -61,4 +66,20 @@ Always rebase before a merge.
 
 # delete branch
 > git branch -d feature
+```
+
+## Aliases
+
+Some good aliases I have stumbled upon.
+
+### Logline
+
+Print your git log much better with this alias.
+
+```bash
+# create alias
+> git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# call alias
+> git logline
 ```
