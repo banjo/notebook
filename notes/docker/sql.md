@@ -32,3 +32,13 @@ FLUSH PRIVILEGES;
 ```
 
 5. Login with your specified user and password remotely
+
+## BONUS
+
+### Change password
+
+```bash
+ALTER 'your_username'@'%' IDENTIFIED BY 'your_password';
+
+FLUSH PRIVILEGES;
+```
