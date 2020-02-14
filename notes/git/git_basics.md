@@ -2,6 +2,17 @@
 
 Some simple explanations of git basics.
 
+-   [Git basics](#git-basics)
+    -   [Workflows](#workflows)
+        -   [Commit](#commit)
+        -   [Branch and merge](#branch-and-merge)
+        -   [Rebase](#rebase)
+        -   [Squash](#squash)
+    -   [Aliases](#aliases)
+        -   [Logline](#logline)
+        -   [Contributors by merge](#contributors-by-merge)
+        -   [Delete local branches](#delete-local-branches)
+
 ## Workflows
 
 Different workflows for git.
@@ -42,8 +53,8 @@ How to branch for a bug fix/new feature and merge the changes.
 
 Keep a clean history with rebase.
 
-- `dev` - the main branch
-- `feature` - the newly created branch
+-   `dev` - the main branch
+-   `feature` - the newly created branch
 
 Always rebase before a merge.
 
@@ -67,6 +78,55 @@ Always rebase before a merge.
 # delete branch
 > git branch -d feature
 ```
+
+### Squash
+
+If you need to squash (combine) commits into one, this is how. If you're at your feature branch with a lot of commits, be sure to be at the latest.
+
+```bash
+# this will take the 3 latest commits, including the current one.
+> git rebase -i HEAD~3
+```
+
+Your text editor will open and look something like this. These are the 3 commits we choose.
+
+```bash
+pick 7f9d4bf Accessibility fix for frontpage bug
+pick 3f8e810 Updated screenreader attributes
+pick ec48d74 Added comments & updated README
+# ...
+```
+
+Replace `pick` with `squash` for those you want to combine. The main one should still have pick.
+
+```bash
+pick 7f9d4bf Accessibility fix for frontpage bug
+squash 3f8e810 Updated screenreader attributes
+squash ec48d74 Added comments & updated README
+# ...
+```
+
+Save and exit, now it's time to edit the comments.
+
+```bash
+# This is a combination of 3 commits
+# This is the 1st commit message:
+
+Accessibility fix for frontpage bug
+
+# This is the commit message for #1:
+
+Updated screenreader attributes
+
+# This is the commit message for #2:
+
+Added comments & updated README
+# ...
+```
+
+Comment out all the commits you don't want to use, and only leave the one you want. Save and exit.
+
+**Done**, now you can merge or rebase.
 
 ## Aliases
 
