@@ -1,23 +1,18 @@
 # Git basics
 
-Some simple explanations of git basics.
-
 -   [Git basics](#git-basics)
-    -   [Workflows](#workflows)
-        -   [Commit](#commit)
-        -   [Branch and merge](#branch-and-merge)
-        -   [Rebase](#rebase)
-        -   [Squash](#squash)
+    -   [Commit](#commit)
+    -   [Branch and merge](#branch-and-merge)
+    -   [Rebase](#rebase)
+    -   [Squash](#squash)
+        -   [Squash latest commits](#squash-latest-commits)
+        -   [Squash earlier commits](#squash-earlier-commits)
     -   [Aliases](#aliases)
         -   [Logline](#logline)
         -   [Contributors by merge](#contributors-by-merge)
         -   [Delete local branches](#delete-local-branches)
 
-## Workflows
-
-Different workflows for git.
-
-### Commit
+## Commit
 
 ```bash
 # add file
@@ -28,7 +23,7 @@ Different workflows for git.
 > git commit -m "Commit message"
 ```
 
-### Branch and merge
+## Branch and merge
 
 How to branch for a bug fix/new feature and merge the changes.
 
@@ -49,7 +44,7 @@ How to branch for a bug fix/new feature and merge the changes.
 > git merge branch_name
 ```
 
-### Rebase
+## Rebase
 
 Keep a clean history with rebase.
 
@@ -79,9 +74,19 @@ Always rebase before a merge.
 > git branch -d feature
 ```
 
-### Squash
+## Squash
+
+### Squash latest commits
 
 If you need to squash (combine) commits into one, this is how. If you're at your feature branch with a lot of commits, be sure to be at the latest.
+
+**This is the commit history**
+
+![](https://i.imgur.com/wKWEyCX.png)
+
+We only want to include the 3 latest commits, including the current one.
+
+![](https://i.imgur.com/zUCAiaa.png)
 
 ```bash
 # this will take the 3 latest commits, including the current one.
@@ -92,51 +97,37 @@ If you need to squash (combine) commits into one, this is how. If you're at your
 ```
 
 If you choose to use the commit hash, for example, these three will be included if you use the hash with the arrow.
-![](https://i.imgur.com/O6OLnFa.png)
+
+![](https://i.imgur.com/DqvFeEs.png)
 
 Your text editor will open and look something like this. These are the 3 commits we choose.
 
-```bash
-pick 7f9d4bf Accessibility fix for frontpage bug
-pick 3f8e810 Updated screenreader attributes
-pick ec48d74 Added comments & updated README
-# ...
-```
+![](https://i.imgur.com/fSAM0yu.png)
 
-Replace `pick` with `squash` for those you want to combine. The main one should still have pick.
+Replace `pick` with `squash` (or `s`) for those you want to combine. The main one should still have pick. Save and exit.
 
-```bash
-pick 7f9d4bf Accessibility fix for frontpage bug
-squash 3f8e810 Updated screenreader attributes
-squash ec48d74 Added comments & updated README
-# ...
-```
+![](https://i.imgur.com/hy2BzM0.png)
 
-Save and exit, now it's time to edit the comments.
+Now, a window with all commit messages will pop up.
 
-```bash
-# This is a combination of 3 commits
-# This is the 1st commit message:
+![](https://i.imgur.com/qGXJ8cC.png)
 
-Accessibility fix for frontpage bug
+Comment out the commit messages of the commits you want to squash and edit the message of the one you want to persist.
 
-# This is the commit message for #1:
-
-Updated screenreader attributes
-
-# This is the commit message for #2:
-
-Added comments & updated README
-# ...
-```
+![](https://i.imgur.com/H6p4qTg.png)
 
 Comment out all the commits you don't want to use, and only leave the one you want. Save and exit.
 
 **Done**, now you can merge or rebase.
 
+This is what the commit history looks like now:
+
+![](https://i.imgur.com/iJ5eb1y.png)
+
 ### Squash earlier commits
 
 If you want to only squash earlier messages, like this:
+
 ![](https://i.imgur.com/sOSspZf.png)
 
 Do a interactive rebase on at least 2 commits before, `1 - removed all files`.
