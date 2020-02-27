@@ -44,6 +44,22 @@ How to branch for a bug fix/new feature and merge the changes.
 > git merge branch_name
 ```
 
+## Delete branch
+
+### Deleting local branches
+
+```bash
+> git branch -d feature/login
+```
+
+_Note: you might want to use the `-f` flag if you have unmerged changes._
+
+### Deleting remove branches
+
+```bash
+> git push origin --delete feature/login
+```
+
 ## Rebase
 
 Keep a clean history with rebase.
