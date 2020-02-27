@@ -32,3 +32,21 @@ docker run -d -p 8090:80 name:tag
 
 -   `-d`: means detached, so no interactiveness or code.
 -   `-p`: specifies the port. Local port `8090` and `80` within the container.
+
+## Save modified container as image
+
+Download and use a container, modify it, and then save it like this.
+
+1. Download the image you want to use.
+2. Modify it
+3. Commit the changes to a new image
+
+```bash
+docker commit <name-of-container> banjoanton/<new-name>:<tag>
+```
+
+4. Push to DockerHub
+
+```bash
+docker push banjoanton/<name-of-image>
+```
