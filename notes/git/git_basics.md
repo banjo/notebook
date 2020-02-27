@@ -86,7 +86,13 @@ If you need to squash (combine) commits into one, this is how. If you're at your
 ```bash
 # this will take the 3 latest commits, including the current one.
 > git rebase -i HEAD~3
+
+# you can also use the commit hash before the one you want to use
+> git rebase -i b1e1d4f
 ```
+
+If you choose to use the commit hash, for example, these three will be included if you use the hash with the arrow.
+![](https://i.imgur.com/O6OLnFa.png)
 
 Your text editor will open and look something like this. These are the 3 commits we choose.
 
@@ -127,6 +133,34 @@ Added comments & updated README
 Comment out all the commits you don't want to use, and only leave the one you want. Save and exit.
 
 **Done**, now you can merge or rebase.
+
+### Squash earlier commits
+
+If you want to only squash earlier messages, like this:
+![](https://i.imgur.com/sOSspZf.png)
+
+Do a interactive rebase on at least 2 commits before, `1 - removed all files`.
+
+```bash
+> git rebase -i <hash-commit>
+```
+
+Use either `s` or `f` to the commits (or `squash` or `fixup`).
+
+-   `squash` - modify commit message
+-   `fixup` - remove commit message
+
+![](https://i.imgur.com/ibO0bLx.png)
+
+The two commits that should be changes is now added. Save and go to next file.
+
+![](https://i.imgur.com/2fP5Eyh.png)
+
+Comment out the two commit messages that you want to change and rewrite the earlier commit (earlier named `2 - added one file and squashed`), now named whatever you want.
+
+Save and the two files will now be squashed with the earlier commit. This is how it looks now:
+
+![](https://i.imgur.com/84Ui2G7.png)
 
 ## Aliases
 
